@@ -1,5 +1,0 @@
-CREATE TABLE review_product(product_id text, review_id text, review_headline text, review_body text, review_date date, star_rating smallint, PRIMARY KEY(product_id, review_id));
-CREATE TABLE review_product_with_rating(product_id text, review_id text, review_headline text, review_body text, review_date date, star_rating smallint, PRIMARY KEY((product_id, star_rating), review_id));
-CREATE TABLE review_customer(customer_id text, review_id text, review_headline text, review_body text, review_date date, star_rating smallint, PRIMARY KEY(customer_id, review_id));
-CREATE TABLE review_customer_product(customer_id text, product_id test, number_rated, PRIMARY KEY(product_id, number_rated));
-CREATE TABLE review_customer_rating(customer_id text, star_rating smallint, review_id text, PRIMARY KEY((customer_id, star_rating), review_id));
